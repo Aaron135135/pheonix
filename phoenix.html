@@ -1,0 +1,18 @@
+<!-- by Aaron Partida using AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js -->
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.1/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>		
+	<a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam;'>
+        	<a-assets>
+             		<a-asset-item id="fly.fbx" src="Phoenix/source/fly.fbx"></a-asset-item>
+			<a-asset-item id="dark-bladde-mtl" src="Assets/dark-bladde.mtl"></a-asset-item>
+        	</a-assets>
+        
+        	<a-marker type='pattern' url='My marker/pattern-pheonixmarker.patt'>
+            		<a-entity obj-model="obj: #dark-bladde-obj; mtl: #dark-bladde-mtl" scale='1.25 1.25 1.25' position='0 0 0'></a-entity>
+        	</a-marker>
+		
+		<a-entity camera></a-entity>
+	</a-scene>
+</body>
