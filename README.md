@@ -1,1 +1,1 @@
-https://aaron135135.github.io/phoenix.html
+https://aaron135135.github.io/phoenix/
